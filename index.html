@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yana Filosofova — Data Visualization &amp; BI Report Designer</title>
+  <meta name="description" content="Yana Filosofova (YANAFIL) — data visualization &amp; BI designer. Executive dashboards, annual reports and market analytics in Power BI, Python and DAX." />
+
+  <meta property="og:title" content="Yana Filosofova — Data Visualization &amp; BI Report Designer" />
+  <meta property="og:description" content="Executive dashboards, annual reports and market analytics that leaders actually read." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="portfolio/02-export-report.png" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23ff6a1a'/%3E%3Ctext x='50' y='72' font-family='Space Grotesk,sans-serif' font-size='64' font-weight='700' text-anchor='middle' fill='%230a0a0c'%3EY%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Schibsted+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- grain + custom cursor -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" data-cursor aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"></div></div>
+
+  <!-- preloader -->
+  <div class="loader" data-loader>
+    <div class="loader__inner">
+      <span class="loader__brand">YANAFIL</span>
+      <div class="loader__bar"><i data-loader-bar></i></div>
+      <span class="loader__count" data-loader-count>0</span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav" data-nav>
+    <a href="#top" class="nav__logo" data-magnetic>
+      <span class="nav__logo-mark">Y</span>
+      <span class="nav__logo-text">Yana&nbsp;Filosofova</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#work" data-i18n="nav.work" data-cursor-hover>Work</a>
+      <a href="#expertise" data-i18n="nav.expertise" data-cursor-hover>Expertise</a>
+      <a href="#about" data-i18n="nav.about" data-cursor-hover>About</a>
+      <a href="#contact" data-i18n="nav.contact" data-cursor-hover>Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="lang" data-lang-toggle aria-label="Switch language">
+        <span class="lang__opt is-active" data-lang-opt="en">EN</span>
+        <span class="lang__sep">/</span>
+        <span class="lang__opt" data-lang-opt="ua">UA</span>
+      </button>
+      <a href="#contact" class="btn btn--sm" data-magnetic data-i18n="nav.cta">Let’s talk</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__grid" data-grid aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__inner container">
+        <div class="hero__tagline reveal-line">
+          <span class="dot"></span>
+          <span data-i18n="hero.available">Available for freelance &amp; contract work</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="line"><span data-i18n="hero.title1">Data that</span></span>
+          <span class="line"><span class="accent" data-i18n="hero.title2">makes decisions</span></span>
+          <span class="line"><span data-i18n="hero.title3">obvious.</span></span>
+        </h1>
+
+        <p class="hero__lead reveal" data-i18n="hero.lead">
+          I’m Yana — a data visualization &amp; BI designer. I turn messy, raw numbers into
+          executive dashboards, annual reports and market analytics that leaders actually read.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="#work" class="btn" data-magnetic data-i18n="hero.ctaWork">View selected work</a>
+          <a href="#contact" class="btn btn--ghost" data-magnetic data-i18n="hero.ctaContact">Start a project</a>
+        </div>
+
+        <div class="hero__stats reveal">
+          <div class="stat">
+            <span class="stat__num" data-count="4">0</span>
+            <span class="stat__label" data-i18n="hero.stat1">Selected works</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="6" data-suffix="+">0</span>
+            <span class="stat__label" data-i18n="hero.stat2">Core tools</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="100" data-suffix="%">0</span>
+            <span class="stat__label" data-i18n="hero.stat3">Focus on data</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#work" class="hero__scroll" aria-label="Scroll">
+        <span data-i18n="hero.scroll">Scroll</span>
+        <i></i>
+      </a>
+    </section>
+
+    <!-- MARQUEE / TOOLS -->
+    <section class="marquee" aria-hidden="false">
+      <div class="marquee__track" data-marquee>
+        <span>Power BI</span><i>◆</i><span>Python</span><i>◆</i><span>DAX</span><i>◆</i>
+        <span>pandas</span><i>◆</i><span>matplotlib</span><i>◆</i><span>Excel</span><i>◆</i>
+        <span>Dashboards</span><i>◆</i><span>AI Analytics</span><i>◆</i>
+        <span>Power BI</span><i>◆</i><span>Python</span><i>◆</i><span>DAX</span><i>◆</i>
+        <span>pandas</span><i>◆</i><span>matplotlib</span><i>◆</i><span>Excel</span><i>◆</i>
+        <span>Dashboards</span><i>◆</i><span>AI Analytics</span><i>◆</i>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work section" id="work">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__idx">01</span>
+          <h2 class="section__title reveal-title" data-i18n="work.title">Selected&nbsp;Work</h2>
+          <p class="section__sub reveal" data-i18n="work.sub">Dashboards &amp; reports built to be understood in seconds.</p>
+        </div>
+
+        <div class="work__grid">
+          <!-- 1 -->
+          <article class="card" data-project="0" data-cursor-view>
+            <div class="card__media">
+              <img src="portfolio/01-agro-dashboard.png" alt="Executive Agro Operations Dashboard" loading="lazy" />
+              <div class="card__overlay"><span data-i18n="work.view">View</span></div>
+            </div>
+            <div class="card__body">
+              <div class="card__meta"><span>Power BI</span><span data-i18n="work.tag.dashboard">Dashboard</span></div>
+              <h3 class="card__title" data-i18n="p0.title">Executive Agro Operations Dashboard</h3>
+              <p class="card__desc" data-i18n="p0.short">Real-time control of open positions across sunflower, soybean &amp; grain markets.</p>
+            </div>
+          </article>
+          <!-- 2 -->
+          <article class="card card--wide" data-project="1" data-cursor-view>
+            <div class="card__media">
+              <img src="portfolio/02-export-report.png" alt="Ukraine Agri Export Annual Report 2025" loading="lazy" />
+              <div class="card__overlay"><span data-i18n="work.view">View</span></div>
+            </div>
+            <div class="card__body">
+              <div class="card__meta"><span>Report</span><span data-i18n="work.tag.infographic">Infographic</span></div>
+              <h3 class="card__title" data-i18n="p1.title">Ukraine Agri Export — Annual Report 2025</h3>
+              <p class="card__desc" data-i18n="p1.short">A premium annual performance review: KPIs, product mix shift &amp; strategic recommendations.</p>
+            </div>
+          </article>
+          <!-- 3 -->
+          <article class="card card--wide" data-project="2" data-cursor-view>
+            <div class="card__media">
+              <img src="portfolio/03-original-dashboard.jpg" alt="Sales Markets Analysis" loading="lazy" />
+              <div class="card__overlay"><span data-i18n="work.view">View</span></div>
+            </div>
+            <div class="card__body">
+              <div class="card__meta"><span>Power BI</span><span data-i18n="work.tag.analytics">Analytics</span></div>
+              <h3 class="card__title" data-i18n="p2.title">Sales Markets Analysis</h3>
+              <p class="card__desc" data-i18n="p2.short">Revenue &amp; volume by country and crop, growth zones and price-potential mapping.</p>
+            </div>
+          </article>
+          <!-- 4 -->
+          <article class="card" data-project="3" data-cursor-view>
+            <div class="card__media">
+              <img src="portfolio/04-ai-market-analytics.jpg" alt="AI Market Growth Analytics" loading="lazy" />
+              <div class="card__overlay"><span data-i18n="work.view">View</span></div>
+            </div>
+            <div class="card__body">
+              <div class="card__meta"><span>Power BI + Python</span><span>AI</span></div>
+              <h3 class="card__title" data-i18n="p3.title">AI Market Growth Analytics</h3>
+              <p class="card__desc" data-i18n="p3.short">Automated insights: top markets, gap analysis, price potential &amp; white-space finder.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section class="expertise section" id="expertise">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__idx">02</span>
+          <h2 class="section__title reveal-title" data-i18n="exp.title">What I do</h2>
+          <p class="section__sub reveal" data-i18n="exp.sub">From raw spreadsheets to boardroom-ready visuals.</p>
+        </div>
+
+        <div class="exp__grid">
+          <div class="exp__card reveal" data-tilt>
+            <span class="exp__num">01</span>
+            <h3 data-i18n="exp.1.t">Executive Dashboards</h3>
+            <p data-i18n="exp.1.d">Interactive Power BI dashboards that turn operations data into one clear source of truth.</p>
+          </div>
+          <div class="exp__card reveal" data-tilt>
+            <span class="exp__num">02</span>
+            <h3 data-i18n="exp.2.t">Annual &amp; Performance Reports</h3>
+            <p data-i18n="exp.2.d">Premium report infographics with strong hierarchy, KPIs and a narrative that reads itself.</p>
+          </div>
+          <div class="exp__card reveal" data-tilt>
+            <span class="exp__num">03</span>
+            <h3 data-i18n="exp.3.t">Market &amp; Sales Analytics</h3>
+            <p data-i18n="exp.3.d">Revenue, volume and growth-zone analysis across markets, crops and product lines.</p>
+          </div>
+          <div class="exp__card reveal" data-tilt>
+            <span class="exp__num">04</span>
+            <h3 data-i18n="exp.4.t">AI-Powered Insights</h3>
+            <p data-i18n="exp.4.d">Python &amp; DAX pipelines that surface gaps, price potential and white-space automatically.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container about__inner">
+        <div class="about__left">
+          <span class="section__idx">03</span>
+          <h2 class="section__title reveal-title" data-i18n="about.title">About</h2>
+        </div>
+        <div class="about__right">
+          <p class="about__lead reveal" data-i18n="about.lead">
+            I design the layer between data and decisions.
+          </p>
+          <p class="reveal" data-i18n="about.p1">
+            My name is Yana Filosofova. I specialise in transforming complex, messy datasets into
+            clear visual stories — executive dashboards, annual reports and market analytics that
+            people can read in seconds and act on with confidence.
+          </p>
+          <p class="reveal" data-i18n="about.p2">
+            I work at the intersection of analytics and design: Power BI and DAX for the logic,
+            Python (pandas, matplotlib) for the heavy lifting, and a strong sense of visual
+            hierarchy for the part that actually convinces stakeholders.
+          </p>
+
+          <div class="about__tools reveal">
+            <span data-i18n="about.stackLabel">Toolbox</span>
+            <ul>
+              <li>Power BI</li><li>Python</li><li>DAX</li>
+              <li>pandas</li><li>matplotlib</li><li>Excel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__head">
+          <span class="section__idx">04</span>
+          <h2 class="contact__title reveal-title">
+            <span class="line"><span data-i18n="contact.t1">Have data</span></span>
+            <span class="line"><span class="accent" data-i18n="contact.t2">worth showing?</span></span>
+          </h2>
+          <p class="section__sub reveal" data-i18n="contact.sub">Tell me about your project — I usually reply within a day.</p>
+        </div>
+
+        <div class="contact__links reveal">
+          <a class="contact__link" data-contact="email" href="mailto:hello@example.com" data-magnetic>
+            <span class="contact__k">Email</span>
+            <span class="contact__v" data-contact-email>hello@example.com</span>
+          </a>
+          <a class="contact__link" data-contact="telegram" href="https://t.me/username" target="_blank" rel="noopener" data-magnetic>
+            <span class="contact__k">Telegram</span>
+            <span class="contact__v" data-contact-tg>@username</span>
+          </a>
+          <a class="contact__link" href="https://freelancehunt.com/freelancer/YANAFIL.html" target="_blank" rel="noopener" data-magnetic>
+            <span class="contact__k">Freelancehunt</span>
+            <span class="contact__v">/YANAFIL</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">YANAFIL</span>
+      <span class="footer__copy">© <span data-year>2026</span> Yana Filosofova · <span data-i18n="footer.role">Data Visualization Designer</span></span>
+      <a href="#top" class="footer__top" data-cursor-hover data-i18n="footer.top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lb" data-lightbox aria-hidden="true">
+    <button class="lb__close" data-lb-close aria-label="Close">✕</button>
+    <button class="lb__nav lb__prev" data-lb-prev aria-label="Previous">‹</button>
+    <button class="lb__nav lb__next" data-lb-next aria-label="Next">›</button>
+    <div class="lb__stage">
+      <img data-lb-img src="" alt="" />
+      <div class="lb__info">
+        <h3 data-lb-title></h3>
+        <p data-lb-desc></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
