@@ -87,8 +87,8 @@
     try { localStorage.setItem('yf-lang', lang); } catch (e) {}
   }
 
-  let curLang = 'en';
-  try { curLang = localStorage.getItem('yf-lang') || 'en'; } catch (e) {}
+  let curLang = 'ua';
+  try { curLang = localStorage.getItem('yf-lang') || 'ua'; } catch (e) {}
   applyLang(curLang);
 
   $('[data-lang-toggle]')?.addEventListener('click', () => {
@@ -126,8 +126,8 @@
     if (window.matchMedia('(hover: none)').matches) return;
     const dot = $('.cursor__dot'), ring = $('.cursor__ring');
     let mx = innerWidth / 2, my = innerHeight / 2, rx = mx, ry = my;
-    addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; dot.style.transform = `translate(${mx}px,${my}px)`; });
-    const loop = () => { rx += (mx - rx) * 0.18; ry += (my - ry) * 0.18; ring.style.transform = `translate(${rx}px,${ry}px)`; requestAnimationFrame(loop); };
+    addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; dot.style.transform = `translate(${mx}px,${my}px) translate(-50%,-50%)`; });
+    const loop = () => { rx += (mx - rx) * 0.18; ry += (my - ry) * 0.18; ring.style.transform = `translate(${rx}px,${ry}px) translate(-50%,-50%)`; requestAnimationFrame(loop); };
     loop();
     const hoverSel = '[data-cursor-hover], a, button, .card, [data-magnetic]';
     $$('[data-cursor-view]').forEach(el => {
